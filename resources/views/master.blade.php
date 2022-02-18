@@ -28,5 +28,22 @@
         height: 480px;
         padding-top: 100px;
     }
+    .slider-img{
+        height: 400px !important;
+        width: 300px !important;
+        text-align: center;
+        margin-left: 120px;
+    }
+    .custom-product{
+        height: 800px;
+    }
+
+    .slider{
+        width: 50%;
+    }
+
+    .product-text{
+        color: black;
+    }
 </style>
 </html>

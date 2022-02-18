@@ -20,8 +20,22 @@ class ProductSeeder extends Seeder
                 'name' => 'Samsung Tv',
                 'price' => '1800$',
                 'description' => 'A Tv with HD screen',
-                'category' => 'Mobile',
-                'gallery' => 'https://cdn.shopify.com/s/files/1/1934/6487/products/samsung-40-fhd-smart-led-tv-40n5300-3_1024x1024@2x.jpg?v=1569077151',
+                'category' => 'Tv',
+                'gallery' => 'https://cdn.shopify.com/s/files/1/1934/6487/products/5.jpg?v=1569077151',
+            ],
+            [
+                'name' => 'Philips Tv',
+                'price' => '2000$',
+                'description' => 'A Tv with HD screen',
+                'category' => 'Tv',
+                'gallery' => 'https://images.philips.com/is/image/PhilipsConsumer/58PUT6604_81-IMS-en_EG?$jpglarge$&wid=960',
+            ],
+            [
+                'name' => 'Philips Tv',
+                'price' => '2000$',
+                'description' => 'A Tv with HD screen',
+                'category' => 'Fridge',
+                'gallery' => 'https://bigchill.com/Images/Products/ProFridge/ProFridge-SlateBlue-Main.jpg',
             ]
         ]);
     }
