@@ -19,30 +19,51 @@
             crossorigin="anonymous"></script>
 </head>
 <body>
-    {{View::make('header')}}
-    @yield('content')
-    {{View::make('footer')}}
+{{View::make('header')}}
+@yield('content')
+{{View::make('footer')}}
 </body>
 <style>
-    .custom-login{
+    .custom-login {
         height: 480px;
         padding-top: 100px;
     }
-    .slider-img{
+
+    .slider-img {
         height: 400px !important;
-        width: 300px !important;
-        text-align: center;
-        margin-left: 120px;
-    }
-    .custom-product{
-        height: 800px;
+        width: 50% !important;
+        margin: 0 auto;
     }
 
-    .slider{
+    .custom-product {
+        height: 800px;
+        width: 60% !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .carousel-control-next:after
+    {
+        content: '>';
+        color: black;
+    }
+
+    .carousel-control-prev:after {
+        content: '<';
+        color: black;
+    }
+
+    .test{
+        color: black !important;
+    }
+
+    .slider {
         width: 50%;
     }
 
-    .product-text{
+    .product-text {
         color: black;
     }
 </style>

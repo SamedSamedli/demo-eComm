@@ -17,26 +17,47 @@ class ProductSeeder extends Seeder
     {
         DB::table('products')->insert([
             [
-                'name' => 'Samsung Tv',
+                'name' => 'Iphone',
                 'price' => '1800$',
-                'description' => 'A Tv with HD screen',
-                'category' => 'Tv',
-                'gallery' => 'https://cdn.shopify.com/s/files/1/1934/6487/products/5.jpg?v=1569077151',
+                'description' => 'Iphone with 6 gb ram',
+                'category' => 'Phone',
+                'gallery' => 'assets/image/1.png',
             ],
             [
-                'name' => 'Philips Tv',
-                'price' => '2000$',
-                'description' => 'A Tv with HD screen',
+                'name' => 'Samsung Tv',
+                'price' => '1400$',
+                'description' => 'Tv with HD screen',
                 'category' => 'Tv',
-                'gallery' => 'https://images.philips.com/is/image/PhilipsConsumer/58PUT6604_81-IMS-en_EG?$jpglarge$&wid=960',
+                'gallery' => 'assets/image/2.jpg',
             ],
             [
-                'name' => 'Philips Tv',
-                'price' => '2000$',
-                'description' => 'A Tv with HD screen',
+                'name' => 'Oneplus',
+                'price' => '800$',
+                'description' => 'Oneplus with 12 gb ram',
+                'category' => 'Phone',
+                'gallery' => 'assets/image/3.jpg',
+            ],
+            [
+                'name' => 'Fridge',
+                'price' => '2800$',
+                'description' => 'Nofrost fridge',
                 'category' => 'Fridge',
-                'gallery' => 'https://bigchill.com/Images/Products/ProFridge/ProFridge-SlateBlue-Main.jpg',
-            ]
+                'gallery' => 'assets/image/4.jpg',
+            ],
+            [
+                'name' => 'LG Tv',
+                'price' => '3800$',
+                'description' => 'Tv with much more features',
+                'category' => 'Tv',
+                'gallery' => 'assets/image/5.jpg',
+            ],
+            [
+                'name' => 'Samsung',
+                'price' => '500$',
+                'description' => 'Samsung with 3gb ram',
+                'category' => 'Phone',
+                'gallery' => 'assets/image/6.jpg',
+            ],
         ]);
     }
 }

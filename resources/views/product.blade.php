@@ -10,7 +10,7 @@
             <div class="carousel-inner">
                 @foreach($products as $product)
                     <div class="carousel-item {{$product['id']==1 ? 'active' : ''}}">
-                        <img class="d-block w-100 slider-img" src="assets/image/{{$product['gallery']}}"
+                        <img class="d-block w-100 slider-img" src="{{$product['gallery']}}"
                              alt="First slide">
                         <div class="carousel-caption">
                             <h3 class="product-text">{{$product['name']}}</h3>
@@ -19,12 +19,12 @@
                 @endforeach
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
+                <span class="carousel-control-prev"></span>
+                <span class="sr-only"></span>
             </a>
             <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
+                <span class="carousel-control-next"></span>
+                <span class="sr-only">Next</span> 
             </a>
         </div>
     </div>
