@@ -24,7 +24,7 @@
             </a>
             <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
                 <span class="carousel-control-next"></span>
-                <span class="sr-only">Next</span> 
+                <span class="sr-only">Next</span>
             </a>
         </div>
     </div>
