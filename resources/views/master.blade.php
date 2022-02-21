@@ -65,8 +65,15 @@
     }
 
     .detail-img{
-        height: 200px;
+        height: 400px;
     }
+
+    .detail-page{
+        margin: 80px 0;
+        display: flex;
+        align-items: center;
+    }
+
 
 </style>
 </html>
