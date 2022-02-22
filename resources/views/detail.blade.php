@@ -9,6 +9,7 @@
                 {{--                <a href="/">Go back</a>--}}
                 <div class="collapse show" id="collapseExample_2">
                     <div class="col-sm-12">
+                        {{--                        <button class="btn btn-primary"><a href="/" style="color: white" >Go back</a></button>--}}
                         <div class="table-responsive">
                             <table class="table">
                                 <tbody>
@@ -31,6 +32,12 @@
                                 </tbody>
                             </table>
                         </div>
+                        <form action="/add_to_cart" method="POST">
+                            @csrf
+                            <input type="hidden" name="product_id" value="{{$product['id']}}">
+                            <button class="btn btn-primary">Add to Cart</button>
+                        </form>
+                        <button class="btn btn-success">Buy now</button>
                     </div>
                 </div>
             </div>

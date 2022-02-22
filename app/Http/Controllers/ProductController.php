@@ -20,4 +20,13 @@ class ProductController extends Controller
         return view('detail', ['product' => $data]);
     }
 
+    function addToCart(Request $req)
+    {
+//        dd($req->session()->has('user'));
+        if ($req->session()->has('user')) {
+            return "Hello";
+        } else {
+            return redirect('/login');
+        }
+    }
 }
