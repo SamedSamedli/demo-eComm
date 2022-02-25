@@ -1,8 +1,12 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\UserController;
+
+//use App\Http\Controllers\UserController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\Auth\RegisterController;
+use App\Http\Controllers\Auth\LoginController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,9 +22,18 @@ use App\Http\Controllers\ProductController;
 //    return view('login');
 //});
 
-Route::get('/login', [UserController::class, 'login']);
-Route::get('/register', [UserController::class, 'register']);
+//Route::get('/login', [UserController::class, 'login']);
+//Route::get('/register', [UserController::class, 'register']);
 Route::get('/', [ProductController::class, 'index']);
 
 Route::get('detail/{id}', [ProductController::class, 'detail']);
 Route::post('add_to_cart', [ProductController::class, 'addToCart']);
+
+
+Route::view('register', 'auth.register');
+Route::post('store', [RegisterController::class, 'store']);
+
+Route::view('login', 'auth.login');
+Route::post('login', [LoginController::class, 'authenticate']);
+
+Route::get('logout', [LoginController::class, 'logout']);

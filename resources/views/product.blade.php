@@ -1,5 +1,7 @@
 @extends('master')
 @section('content')
+{{--    <h2>hello {{auth()->user()->name}}</h2>--}}
+    <a href="logout">Logout</a>
     <div class="container custom-product">
         <div id="carouselExampleIndicators" class="carousel slide slider" data-ride="carousel">
             <ol class="carousel-indicators">
