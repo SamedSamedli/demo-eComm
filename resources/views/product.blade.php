@@ -1,7 +1,6 @@
 @extends('master')
 @section('content')
-{{--    <h2>hello {{auth()->user()->name}}</h2>--}}
-    <a href="logout">Logout</a>
+    {{--    <h2>Hello {{auth()->user()->name}}</h2>--}}
     <div class="container custom-product">
         <div id="carouselExampleIndicators" class="carousel slide slider" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -44,6 +43,4 @@
             </a>
         @endforeach
     </div>
-
-
 @endsection

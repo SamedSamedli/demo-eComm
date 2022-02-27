@@ -19,6 +19,7 @@ class LoginController extends Controller
         $email = $request->input('email');
         $password = $request->input('password');
 
+
         if (Auth::attempt(['email' => $email, 'password' => $password])) {
             $user = User::where('email', $email)->first();
             Auth::login($user);

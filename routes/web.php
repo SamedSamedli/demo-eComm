@@ -18,12 +18,6 @@ use App\Http\Controllers\Auth\LoginController;
 |
 */
 
-//Route::get('/login', function () {
-//    return view('login');
-//});
-
-//Route::get('/login', [UserController::class, 'login']);
-//Route::get('/register', [UserController::class, 'register']);
 Route::get('/', [ProductController::class, 'index']);
 
 Route::get('detail/{id}', [ProductController::class, 'detail']);
@@ -37,3 +31,5 @@ Route::view('login', 'auth.login');
 Route::post('login', [LoginController::class, 'authenticate']);
 
 Route::get('logout', [LoginController::class, 'logout']);
+
+//Route::view('home', 'home');
