@@ -6,10 +6,10 @@
                 <img class="detail-img" src="{{$product['gallery']}}" alt="">
             </div>
             <div class="col-sm-6">
-                {{--                <a href="/">Go back</a>--}}
+                {{--<a href="/">Go back</a>--}}
                 <div class="collapse show" id="collapseExample_2">
                     <div class="col-sm-12">
-                        {{--                        <button class="btn btn-primary"><a href="/" style="color: white" >Go back</a></button>--}}
+                        {{--<button class="btn btn-primary"><a href="/" style="color: white" >Go back</a></button>--}}
                         <div class="table-responsive">
                             <table class="table">
                                 <tbody>
