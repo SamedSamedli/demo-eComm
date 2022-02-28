@@ -1,6 +1,6 @@
 @extends('master')
 @section('content')
-    {{--    <h2>Hello {{auth()->user()->name}}</h2>--}}
+{{--    <h2>Hello {{auth()->user()->name}}</h2>--}}
     <div class="container custom-product">
         <div id="carouselExampleIndicators" class="carousel slide slider" data-ride="carousel">
             <ol class="carousel-indicators">

@@ -23,7 +23,7 @@ class ProductController extends Controller
     function addToCart(Request $req)
     {
 //        dd($req->session()->has('user'));
-        if ($req->session()->has('user')) {
+        if ($req->session()->has('user')) { 
             return "Hello";
         } else {
             return redirect('/login');

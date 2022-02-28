@@ -64,11 +64,11 @@
         justify-content: space-around;
     }
 
-    .detail-img{
+    .detail-img {
         height: 400px;
     }
 
-    .detail-page{
+    .detail-page {
         margin: 80px 0;
         display: flex;
         align-items: center;
