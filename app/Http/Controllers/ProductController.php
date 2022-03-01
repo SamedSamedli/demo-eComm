@@ -35,4 +35,11 @@ class ProductController extends Controller
             return redirect('/login');
         }
     }
+
+    static function cartItem()
+    {
+        $userId = Auth::id();
+        return Cart::where('user_id', $userId)->count();
+    }
+
 }

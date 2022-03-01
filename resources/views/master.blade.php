@@ -73,5 +73,10 @@
         display: flex;
         align-items: center;
     }
+
+    .navbar-menu{
+        display: flex;
+        align-items: center;
+    }
 </style>
 </html>
