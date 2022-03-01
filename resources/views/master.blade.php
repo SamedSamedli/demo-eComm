@@ -74,9 +74,31 @@
         align-items: center;
     }
 
-    .navbar-menu{
+    .navbar-menu {
         display: flex;
         align-items: center;
     }
+
+    /*.custom-cart {*/
+    /*    height: 600px;*/
+    /*    width: 60% !important;*/
+    /*}*/
+
+    .cart-image {
+        height: 150px;
+    }
+
+    .searched-items {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cart-list-divider{
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+
 </style>
 </html>

@@ -32,4 +32,4 @@ Route::post('login', [LoginController::class, 'authenticate']);
 
 Route::get('logout', [LoginController::class, 'logout']);
 
-//Route::view('home', 'home');
+Route::get('cartlist', [ProductController::class, 'cartList']);
