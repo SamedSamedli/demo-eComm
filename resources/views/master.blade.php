@@ -79,11 +79,6 @@
         align-items: center;
     }
 
-    /*.custom-cart {*/
-    /*    height: 600px;*/
-    /*    width: 60% !important;*/
-    /*}*/
-
     .cart-image {
         height: 150px;
     }
@@ -98,6 +93,10 @@
         border-bottom: 1px solid #ccc;
         margin-bottom: 20px;
         padding-bottom: 20px;
+    }
+
+    .orderNow{
+        margin: 20px 0;
     }
 
 </style>

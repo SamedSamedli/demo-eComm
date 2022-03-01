@@ -1,7 +1,8 @@
 @extends('master')
 @section('content')
-    <div class="container custom-cart">
+    <div class="custom-cart">
         <div class="col-sm-10">
+            <a class="btn btn-success orderNow" href="ordernow">Order Now</a>
             @foreach($products as $item)
                 <div class="row searched-items cart-list-divider">
                     <div class="col-sm-4 py-3">
@@ -15,7 +16,7 @@
                         <h5>{{$item->price}}</h5>
                     </div>
                     <div class="col-sm-3">
-                        <button class="btn btn-warning">Remove from Cart</button>
+                        <a href="/removecart/{{$item->cart_id}}" class="btn btn-warning">Remove from Cart</a>
                     </div>
                 </div>
             @endforeach
